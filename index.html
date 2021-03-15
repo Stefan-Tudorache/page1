@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alabastra Chalange</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-print-color-adjust: exact;
+        -webkit-min-device-pixel-ratio: 0;
+      }
+
+      :root {
+        --primary-color: blue;
+      }
+
+      .box {
+        width: 5cm;
+        height: 5cm;
+        border: solid 2px var(--primary-color);
+        margin: 10px;
+        position: relative;
+      }
+
+      .container {
+        width: 99vw;
+        height: 99vh;
+        border: 2px solid red;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex: 25%;
+      }
+
+      .container h1 {
+        text-align: center;
+        padding-top: 3.4cm;
+        color: var(--primary-color);
+        font-size: 50px;
+      }
+
+      .h1,
+      .h2,
+      .h3,
+      .h4 {
+        font-size: 40px;
+        color: var(--primary-color);
+      }
+
+      .container .h1 {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+      }
+
+      .container .h2 {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+      }
+
+      .container .h3 {
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+      }
+
+      .container .h4 {
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+      }
+
+      .container .box-6 .h1,
+      .h2,
+      .h3,
+      .h4 {
+        font-size: 30px;
+      }
+
+      .container .box-7 .h1,
+      .h2,
+      .h3,
+      .h4 {
+        font-size: 30px;
+      }
+
+      .container .box-8 .h1,
+      .h2,
+      .h3,
+      .h4 {
+        font-size: 30px;
+      }
+
+      .container .box-9 .h1,
+      .h2,
+      .h3,
+      .h4 {
+        font-size: 30px;
+      }
+
+      .water h1 {
+        color: skyblue;
+      }
+
+      .water {
+        border: solid 2px skyblue;
+      }
+
+      .box-1 {
+        background: url("./img/alabastra/ice.golem.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-2 {
+        background: url("./img/alabastra/blizzard.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-3 {
+        background: url("./img/alabastra/snowleopard.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-4 {
+        background: url("./img/alabastra/northernlights.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-5 {
+        background: url("./img/alabastra/ice.break.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-6 {
+        background: url("./img/alabastra/snowman.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-7 {
+        background: url("./img/alabastra/frost.lion.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-8 {
+        background: url("./img/alabastra/ice.knight.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-9 {
+        background: url("./img/alabastra/ice.dragon.seregost.jpeg") no-repeat
+          center center/cover;
+      }
+
+      /* ************************************************************** */
+      .box-10 {
+        background: url("./img/alabastra/winter1.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-11 {
+        background: url("./img/alabastra/winter2.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-12 {
+        background: url("./img/alabastra/winter3.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-13 {
+        background: url("./img/alabastra/winter4.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-14 {
+        background: url("./img/alabastra/winter5.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-15 {
+        background: url("./img/alabastra/winter6.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-16 {
+        background: url("./img/alabastra/winter7.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-17 {
+        background: url("./img/alabastra/winter8.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-18 {
+        background: url("./img/alabastra/winter9.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-19 {
+        background: url("./img/alabastra/winter10.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-20 {
+        background: url("./img/alabastra/winter11.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-21 {
+        background: url("./img/alabastra/winter12.jpg") no-repeat center
+          center/cover;
+      }
+      /* ****************************************************** */
+
+      .box-22 {
+        background: url("./img/alabastra/winter13.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-23 {
+        background: url("./img/alabastra/winter14.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-24 {
+        background: url("./img/alabastra/winter15.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-25 {
+        background: url("./img/alabastra/winter16.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-26 {
+        background: url("./img/alabastra/winter17.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-27 {
+        background: url("./img/alabastra/winter18.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-28 {
+        background: url("./img/alabastra/winter19.jpg") no-repeat center
+          center/cover;
+      }
+      /* ***************************************** */
+      .box-29 {
+        background: url("./img/lake/lake13.jpg") no-repeat center center/cover;
+      }
+
+      .box-30 {
+        background: url("./img/lake/lake14.jpg") no-repeat center center/cover;
+      }
+
+      .box-31 {
+        background: url("./img/lake/lake15.jpg") no-repeat center center/cover;
+      }
+
+      .box-32 {
+        background: url("./img/lake/lake16.jpg") no-repeat center center/cover;
+      }
+
+      .box-33 {
+        background: url("./img/lake/lake17.jpg") no-repeat center center/cover;
+      }
+
+      .box-34 {
+        background: url("./img/lake/lake18.jpg") no-repeat center center/cover;
+      }
+
+      .box-35 {
+        background: url("./img/lake/lake19.jpg") no-repeat center center/cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">
+        <h6 class="h1">87</h6>
+        <h6 class="h2">87</h6>
+        <h6 class="h3">87</h6>
+        <h6 class="h4">87</h6>
+      </div>
+      <div class="box box-2">
+        <h6 class="h1">90</h6>
+        <h2 class="h2">90</h2>
+        <h6 class="h3">90</h6>
+        <h6 class="h4">90</h6>
+      </div>
+      <div class="box box-3">
+        <h6 class="h1">93</h6>
+        <h6 class="h2">93</h6>
+        <h6 class="h3">93</h6>
+        <h6 class="h4">93</h6>
+      </div>
+      <div class="box box-4">
+        <h6 class="h1">96</h6>
+        <h6 class="h2">96</h6>
+        <h6 class="h3">96</h6>
+        <h6 class="h4">96</h6>
+      </div>
+      <div class="box box-5">
+        <h6 class="h1">99</h6>
+        <h6 class="h2">99</h6>
+        <h6 class="h3">99</h6>
+        <h6 class="h4">99</h6>
+      </div>
+      <div class="box box-6">
+        <h6 class="h1">102</h6>
+        <h6 class="h2">102</h6>
+        <h6 class="h3">102</h6>
+        <h6 class="h4">102</h6>
+      </div>
+      <div class="box box-7">
+        <h6 class="h1">105</h6>
+        <h6 class="h2">105</h6>
+        <h6 class="h3">105</h6>
+        <h6 class="h4">105</h6>
+      </div>
+      <div class="box box-8">
+        <h6 class="h1">108</h6>
+        <h6 class="h2">108</h6>
+        <h6 class="h3">108</h6>
+        <h6 class="h4">108</h6>
+      </div>
+      <div class="box box-9">
+        <h6 class="h1">112</h6>
+        <h6 class="h2">112</h6>
+        <h6 class="h3">112</h6>
+        <h6 class="h4">112</h6>
+      </div>
+      <!-- ************************************************************** -->
+      <div class="box box-10">
+        <h1>85</h1>
+      </div>
+      <div class="box box-11">
+        <h1>86</h1>
+      </div>
+      <div class="box box-12">
+        <h1>88</h1>
+      </div>
+      <div class="box box-13">
+        <h1>89</h1>
+      </div>
+      <div class="box box-14">
+        <h1>91</h1>
+      </div>
+      <div class="box box-15">
+        <h1>92</h1>
+      </div>
+      <div class="box box-16">
+        <h1>94</h1>
+      </div>
+      <div class="box box-17">
+        <h1>95</h1>
+      </div>
+      <div class="box box-18">
+        <h1>97</h1>
+      </div>
+      <div class="box box-19">
+        <h1>98</h1>
+      </div>
+      <div class="box box-20">
+        <h1>100</h1>
+      </div>
+      <div class="box box-21">
+        <h1>101</h1>
+      </div>
+      <!-- *************************************************** -->
+      <div class="box box-22">
+        <h1>103</h1>
+      </div>
+      <div class="box box-23">
+        <h1>104</h1>
+      </div>
+      <div class="box box-24">
+        <h1>106</h1>
+      </div>
+      <div class="box box-25">
+        <h1>107</h1>
+      </div>
+      <div class="box box-26">
+        <h1>109</h1>
+      </div>
+      <div class="box box-27">
+        <h1>110</h1>
+      </div>
+      <div class="box box-28">
+        <h1>111</h1>
+      </div>
+      <!-- ************************************************************* -->
+      <div class="box box-29 water">
+        <h1>74</h1>
+      </div>
+      <div class="box box-30 water">
+        <h1>76</h1>
+      </div>
+      <div class="box box-31 water">
+        <h1>77</h1>
+      </div>
+      <div class="box box-32 water">
+        <h1>79</h1>
+      </div>
+      <div class="box box-33 water">
+        <h1>80</h1>
+      </div>
+      <div class="box box-34 water">
+        <h1>82</h1>
+      </div>
+      <div class="box box-35 water">
+        <h1>83</h1>
+      </div>
+    </div>
+  </body>
+</html>
